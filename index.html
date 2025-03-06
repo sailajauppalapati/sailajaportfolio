@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Krishna Charan Thota</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Lakshmi Sailaja Uppalapati</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpeg" alt="Lakshmi Sailaja profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Lakshmi Sailaja Uppalapati</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Lakshmi-Sailaja-Uppalapati-resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sailajau/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/sailajauppalapati'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+
+        <div class="about-details-container-education">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3+ years <br />Software Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> Bachelors of Technology in Computer Science<br />Master of Engineering in Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a passionate Data Engineer with experience building scalable data pipelines, automating ETL processes, and optimizing data architectures across cloud platforms like AWS, Azure, and GCP. With expertise in Python, SQL, PySpark, and big data technologies, I have worked in industries like healthcare and insurance, delivering impactful data solutions. I thrive on solving complex data challenges, collaborating with cross-functional teams, and continuously learning new technologies to drive business insights.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="Skills-details-container">
+        <div class="about-containers">
+          <div class="details-container-skills">
+            <h2 class="Skills-sub-title">Tools & Methodologies</h2>
+              <div class="container">
+                <div class="skills">
+                  <div class="skill">Git</div>
+                  <div class="skill">GitHub</div>
+                  <div class="skill">Maven</div>
+                  <div class="skill">Brazil</div>
+                  <div class="skill">Jenkins</div>
+                  <div class="skill">Agile/Scrum</div>
+                  <div class="skill">QuickSight</div>
+                  <div class="skill">Asana</div>
+                  <div class="skill">Quip</div>
+                  <div class="skill">Jira</div>
+                  <div class="skill">CI/CD</div>
+                  <div class="skill">Docker</div>
+                  <div class="skill">Kubernetes</div>
+              </div>
+              </div>
+          </div>
+          <div class="details-container-skills">
+            <h2 class="Skills-sub-title">Programming Languages</h2>
+              <div class="container">
+                  <div class="skills">
+                    <div class="skill">Java</div>
+                    <div class="skill">HTML</div>
+                    <div class="skill">CSS</div>
+                    <div class="skill">TypeScript</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">Python</div>
+                  </div>
+              </div>
+          </div>
+          <div class="details-container-skills">
+            <h2 class="Skills-sub-title">AWS Technologies & Databases</h2>
+              <div class="container">
+                  <div class="skills">
+                    <div class="skill">API Gateway</div>
+                    <div class="skill">S3</div>
+                    <div class="skill">SQS</div>
+                    <div class="skill">CloudWatch</div>
+                    <div class="skill">CloudFormation</div>
+                    <div class="skill">IAM</div>
+                    <div class="skill">ECS</div>
+                    <div class="skill">Fargate</div>
+                    <div class="skill">EC2</div>
+                    <div class="skill">CDK</div>
+                    <div class="skill">DynamoDB</div>
+                    <div class="skill">AWS Redshift</div>
+                    <div class="skill">MySQL</div>
+                  </div>
+              </div>
+          </div>
+          <div class="details-container-skills">
+            <h2 class="Skills-sub-title">Frameworks & Libraries</h2>
+              <div class="container">
+                  <div class="skills">
+                    <div class="skill">Spring</div>
+                    <div class="skill">Spring Boot</div>
+                    <div class="skill">Spring Cloud</div>
+                    <div class="skill">JUnit</div>
+                    <div class="skill">Mockito</div>
+                    <div class="skill">React.js</div>
+                    <div class="skill">Coral</div>
+                    <div class="skill">Redux</div>
+                    <div class="skill">Jest</div>
+                    <div class="skill">Cypress</div>
+                    <div class="skill">Bootstrap</div>
+                  </div>
+              </div>
+          </div>
+    </section>
+    <section id="Experience">
+      <p class="section__text__p1">Explore my </p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Amazon-Logo.png"
+                alt="Project 1"
+                class="project-experience-img-amazon"
+              />
+              <p>
+                As a Software Dev Engineer Intern at Amazon, I contributed to integrating Twilio with SNS for AWS Cognito User Pools using Java and React, ensuring scalable and efficient SMS delivery. I collaborated with cross-functional teams to invoke the UMS Service via the AsyncTextInternal API, streamlining user sign-ups. Additionally, I played a key role in designing and setting up an Enterprise Data Lake for processing and analyzing over 10 TB of dynamic data. My work involved optimizing data quality in AWS EMR, automating ETL workflows with Apache Airflow, and leveraging Spark and AWS Glue to enhance data pipeline efficiency.</p>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Abhibus-logo.png"
+                class="project-experience-img-abhi"/>
+                <p>
+                  As a Data Engineer at Progressive Insurance, I revamped real-time data pipelines using GCP services like Pub/Sub, BigQuery, and Dataflow, ensuring HIPAA compliance and enhancing data visualization. I automated ETL workflows with Apache Airflow, Python, Pandas, and Spark, reducing manual intervention by 90%. By leveraging Terraform and GCP Cloud Functions, I built scalable architectures processing over 1M events daily, improving deployment efficiency and team collaboration. Additionally, I optimized Data Warehouse and Data Lake models using star and snowflake schemas, enhancing performance by 30%. My work also involved architecting real-time streaming pipelines with Spark Streaming and Apache Kafka for ad event processing and integrating LLMs to automate data classification and sentiment analysis, improving predictive analytics accuracy by 20%.
+                </p>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/UclidLogo.png"
+                class="project-experience-img-uclid"
+              />
+              <p> As a Data Engineer at Keka Technologies, I optimized high-volume ETL pipelines using Azure Data Factory, processing 1.5 TB of data daily and increasing extraction and transformation efficiency by 40%. I leveraged Azure Databricks with Scala and Spark to preprocess and transform large datasets, improving processing speed by 40%. Additionally, I streamlined data ingestion from on-prem SQL to ADLS using Azure Synapse Analytics and Azure SQL DB, reducing processing time by 35% and enhancing query performance by 25%. As an SME, I managed over 10 databases, redesigned NoSQL structures in Cassandra and Azure Cosmos DB, and improved data retrieval speeds by 40%. I also utilized Docker and Kubernetes for containerized application deployment, enhancing system scalability and efficiency by 30%.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:lakshmisu13@gmail.com">lakshmisu13@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/sailajau/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Lakshmi Sailaja Uppalapati. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
