@@ -335,7 +335,7 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
-  height: 20rem;
+  height: 23rem;
 }
 
 .section-container {
@@ -411,14 +411,14 @@ article .icon {
   height: auto; /* Maintain aspect ratio */
 }
 
-.project-experience-img-abhi {
-  width: 180px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
+.project-experience-img-progressive {
+  width: 55px; /* Adjust the width as needed */
+  height: 55px; /* Maintain aspect ratio */
 }
 
-.project-experience-img-uclid {
-  width: 180px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
+.project-experience-img-keka {
+  width: 110px; /* Adjust the width as needed */
+  height: 55px; /* Maintain aspect ratio */
 }
 .project-title {
   margin: 1rem;
@@ -485,7 +485,7 @@ footer p {
 .Skills-details-container {
   text-align: center;
   padding: 5px;
-  margin: 20px auto;
+  margin: 0px auto;
 }
 
 .Skills-sub-title {
@@ -493,7 +493,7 @@ footer p {
   font-weight: 700;
   color: #333;
   font-size: 24px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   margin-top: 0px;
 }
 
